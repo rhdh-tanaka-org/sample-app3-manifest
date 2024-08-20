@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  backstage.io/kubernetes-id: sample-app3
+
+resources:
+#  - project.yaml
+#  - rolebindings.yaml
+  - sample-app3-deploy.yaml
+  - sample-app3-service.yaml
+  - sample-app3-route.yaml
